@@ -1,0 +1,455 @@
+/* Layout */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  /*box-sizing: border-box;*/
+  font-size: 16px;
+  margin-top: 0;
+}
+
+body {
+	background: #140903;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Fonts */
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: 'Fondamento', cursive;
+  margin: 0.5em auto;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: 'Fondamento', cursive;
+  border-bottom: 1px solid #140903;
+}
+
+h4 {
+  font-size: 2em;
+  font-family: 'Fondamento', cursive;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  text-align: right;
+  position: absolute;
+}
+
+/* Toggle button */
+
+.toggle-nav {
+  display: none;
+}
+
+/* Main Navbar */
+
+nav ul li {
+	display: inline-block;
+  margin-right: 5%;
+  font-size: 1.3em;
+}
+
+nav ul li a {
+  color: #140903;
+}
+
+nav ul li .navbar-button:hover {
+  color: #fff;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  padding-left: 0;
+  width: 100px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+  background-color: #411E00;
+  padding:5px;
+  width:100%;
+  text-align: center;
+}
+
+nav ul ul li a {
+  font-size: 20px;
+  color: #BEB1A1;
+}
+
+nav ul li ul li:hover {
+  background-color: #A55820;
+}
+
+
+/*====== HOME PAGE ===========================================================*/
+
+/* Panel Top */
+
+.cover {
+  width: 100%;
+  height: 95vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.top {
+  background: url('../images/test.jpg');
+	background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fondamento', cursive;
+  color: #140903;
+}
+
+.logo {
+  height: 110px;
+  width: auto;
+  margin: 12% auto 0 auto;
+}
+ h1 {
+   padding-top: 0;
+   padding-bottom: 0;
+   margin: 0 auto;
+}
+
+.line-top, .line-top {
+  width: 4%;
+  border-color: #140903;
+}
+
+.line-top, h4, .line-top {
+  display:inline-block;
+  margin: 0 1% 1% 1%;
+  padding-top: 0;
+}
+
+.visit-us-button {
+  display: block;
+  margin: 2em auto;
+  width: 10em;
+  padding: 10px 15px;
+  background-color: #411E00;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+.visit-us-button:hover {
+  background-color: #A55820;
+  color: #140903;
+  font-weight: bolder;
+}
+
+/* Panel Two: Specials of the Week */
+
+.panel-two {
+  text-align: center;
+  padding-left: 1.8%;
+}
+
+.offer-one, .offer-two {
+	width: 49%;
+  height: 80%;
+  padding: 1%;
+	margin: 3em 0 0 0;
+	float: left;
+  color: #fff;
+  border-bottom: 1px solid #CD9451;
+}
+
+.offer-one h3, .offer-two h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #CD9451;
+  color: #CD9451;
+}
+
+.offer-one img, .offer-two img {
+  width: 50%;
+  height: auto;
+  float: left;
+  clear: right;
+  margin: 1%;
+}
+
+.offer-text {
+  width: 45%;
+  float: left;
+  clear: right;
+  padding: 1%;
+}
+
+ .arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+
+.show-arrow {
+  display: block;
+}
+
+/* Panel Three: Products */
+
+.panel-three {
+  text-align: center;
+  background-color: #411E00;
+}
+
+.one-third {
+  width: 32%;
+  margin: 3em auto;
+  background-color: #A55820;
+  padding: 2em;
+  display: inline-block;
+}
+
+.one-third img {
+  width: 100%;
+  height: auto;
+}
+
+/* Panel Four: Menu */
+
+.panel-four {
+  text-align: center;
+  background: url('../images/menu.jpg');
+	background-size: cover;
+  background-position: center;
+  padding-top: 1em;
+  width: 100%;
+  height: 110vh;
+}
+
+.panel-four h2 {
+  margin: 0.5em auto 0.3em auto;
+
+}
+
+.menu {
+  background-color:rgba(65, 30, 0, 0.5);
+  width: 30%;
+  height: 80%;
+  margin: 0.5em 0.5em 0.5em 1.8em;
+  padding:inherit;
+  color: #ffffff;
+  float: left;
+}
+
+
+/* Panel Five: About us */
+
+ .panel-five {
+   background-color: #592B09;
+   width: 100%;
+   height:60vh;
+   color: #fff;
+   text-align: center;
+   padding-top: 1em;
+ }
+ .panel-five h2 {
+   font-size: 3em;
+   font-family: 'Fondamento', cursive;
+   margin: 2% auto 0 auto;
+   padding-bottom: 0;
+ }
+
+ .line-about {
+   border-color: #fff;
+   width: 20.6%;
+ }
+
+ .line-about, .about h2 {
+    display: inline-block;
+ }
+
+ .panel-five > p {
+   width:60%;
+   margin: 0 auto;
+   padding-top: 2%;
+   padding-right: 5%;
+   padding-bottom: 2%;
+   padding-left: 5%;
+   border-bottom: 1px solid #fff;
+ }
+
+ /* Footer: Contact */
+
+ footer {
+   text-align: center;
+   background-color: #140903;
+   padding-top: 1em;
+   color: #fff;
+ }
+
+.line-1, .line-2 {
+  border-color: #fff;
+  width: 5%;
+}
+
+ .line-1, h2, .line-2 {
+   display: inline-block;
+   padding: 0 1%;
+  }
+
+ footer > p {
+   margin: 2em;
+ }
+
+.fa {
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 1em;
+  transition-duration: 0.3s;
+}
+
+.fa:hover {
+   font-size: 2em;
+   transition-duration: 0.3s;
+   margin: 0 0.28em;
+   padding: 0 0.5em;
+}
+
+footer a {
+  color: white;
+}
+
+/*====== MAP PAGE ===========================================================*/
+
+.header-map > a {
+  float: left;
+  clear: right;
+  font-size: 2em;
+  font-family: 'Fondamento', cursive;
+  color: #BEB1A1;
+  margin: 10px 5%;
+}
+
+/*.header-map > a > img {
+  width: 90px;
+  height: auto;
+}*/
+
+ .header-map > nav ul li a {
+   color: #BEB1A1;
+ }
+
+ .panel-map {
+   background: url('../images/offer.jpeg');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 90vh;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+ }
+
+ .cover-panel-map {
+   width: 100%;
+   height: 90vh;
+   margin: 0;
+   padding-top: 9em;
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+
+
+ /*---Responsive Design---------------------------------------------------*/
+
+ /* Query for Tablet Devices */
+
+ @media (max-width: 1000px) {
+
+   .logo {
+     height: 100px;
+     width: auto;
+     margin: 20% auto 0 auto;
+   }
+
+   h1 {
+     padding-top: 0;
+     padding-bottom: 0;
+     margin: 0 auto;
+     font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+   .one-third {
+     width: 90%;
+     display: block;
+   }
+ }
+
+/* Query for Mobile Devices */
+
+@media (max-width: 700px) {
+
+  nav {
+    display: none;
+  }
+
+  .toggle-nav {
+    display: block;
+    float:right;
+    margin:10px;
+    background-color: #140903;
+    color: #fff;
+    font-size: 2em;
+    padding: 0px 7px 3px 7px;
+    border-radius: 3px;
+  }
+
+  .offer-one, .offer-two {
+    width: 90%;
+    display: block;
+  }
+
+  .one-third {
+    width: 90%;
+    display: block;
+  }
+
+}
